@@ -14,9 +14,11 @@ int main()
     std::cin >> option;
     // Options if they pick if they want to Type , Check Leaderboard or Quit
     if (option == '1'){
-    }else if  (option == '2'){
+    }
+    else if  (option == '2'){
         
-    }else{
+    }
+    else{
         break;
         return 0;
     }
