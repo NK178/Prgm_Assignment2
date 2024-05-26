@@ -10,8 +10,8 @@ int option = 0;
 //Array to store user input
 char Userinput[50];
 
-//to show total words in the sentence
-int total = 44;
+//to show total words in the sentence based on sentence choosen
+int total = 0;
 
 //to show number of characters wrong
 int error_count = 0;
