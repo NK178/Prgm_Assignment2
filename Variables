@@ -5,7 +5,7 @@ char Sentence1 [] "The quick brown fox jumps over the lazy dog"; //use this to t
 //Sentence 2,3...
 
 //Variable for user input choice for action 
-int choice = 0;
+int option = 0;
 
 //Array to store user input
 char Userinput[50];
