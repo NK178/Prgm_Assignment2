@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    int option;
+
     // Ask user what they want to do 
     std::cout << "Welcome To Speed Typing";
     std::cout << "Please choose what you want to do";
