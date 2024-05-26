@@ -18,8 +18,11 @@ void Errorcount (char input[50], char SentOutput [], float total, int& error_cou
 		error_count++;
 		}
 	}
-	cout << "No. of mistakes" << error_count;
+	cout << "No. of mistakes" << error_count << endl;
 }
 
 //Code for accuracy calculator 
-void Accuracy (
+void Accuracy (float& acc, float total, int error_count) {
+	acc = ((total - error_count) / total) * 100;
+	cout << "Accuracy: " << acc; 
+} 
