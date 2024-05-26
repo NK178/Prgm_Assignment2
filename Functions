@@ -1,2 +1,4 @@
 //Code for all the functions 
 //Code to handle typing 
+void Typeinput (char input[50]) {
+	
