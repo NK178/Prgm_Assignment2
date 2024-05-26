@@ -1,4 +1,11 @@
 //Code for all the functions 
+
 //Code to handle typing 
-void Typeinput (char input[50]) {
-	
+void Typeinput (char input[50], float total) {
+	cin.ignore();
+	cin.clear();
+	cin.getline(input, total);
+	cout << "\n: " << input << endl; 
+}
+
+//Code for accuracy checker 	
