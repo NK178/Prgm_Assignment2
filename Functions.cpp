@@ -1,4 +1,16 @@
 //Code for all the functions 
+#include <Windows.h> // For cursor control 
+
+//Code to handle cursor control 
+void gotoxy(short x, short y) {
+
+	//Use hStdout to gain control over the console
+	HANDLE hStdout = GetStdHandle(STD_OUTPUT_HANDLE);
+	//Delare x,y position of cursor
+	COORD position = {x,y};
+	//Gives control over cursor 
+	SetConsoleCursorPosition(hStdout, position);
+}
 
 //Code to handle typing 
 void Typeinput (char input[50], float total) {
