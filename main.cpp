@@ -1,27 +1,72 @@
 //Main.cpp, all the process appear here
 
+#include <Windows.h> //for cursor control 
+#include "Functions.h"
 #include <iostream>
+#include <conio.h> // for _getch()
+
 using namespace std;
 
 int main()
 {
 
-    // Ask user what they want to do 
-    std::cout << "Welcome To Speed Typing";
-    std::cout << "Please choose what you want to do";
-    std::cout << "[1] Type ";
-    std::cout << "[2] Check Score ";
-    std::cin >> option;
-    // Options if they pick if they want to Type , Check Leaderboard or Quit
-    if (option == '1'){
-    }
-    else if  (option == '2'){
-        
-    }
-    else{
-        break;
-        return 0;
-    }
+	Frame();
+
+	//type box
+	Option1();
+	
+	//leaderboard box
+	Option2();
+
+	//Quit button 
+	Option3();
+
+	//Key instructions 
+	gotoxy(5, 26);
+	cout << "Use KEY_DOWN, KEY_LEFT, KEY_RIGHT";
+	gotoxy(5, 27);
+	cout << "To move around in the menu screen";
+
+    //Variables for key inputs
+	int c = 0;
+	bool condition = false;
+
+	//Code for menu inputs 
+	while (condition != true) {
+
+		switch (c = _getch()) {
+
+		case KEY_UP:
+
+			cout << endl << "Up" << endl;//key up
+			break;
+
+		case KEY_DOWN:
+			Clear();
+			Arrow(37, 18);
+			cout << endl << "Down" << endl; // key down
+			break;
+
+		case KEY_LEFT:
+			Clear();
+			Arrow(2, 8);
+
+			break;
+
+		case KEY_RIGHT:
+			Clear();
+			Arrow(52, 8);
+
+			break;
+
+		case ENTER:
+
+			
+			condition = true;
+			break;
+
+		}
+	}
     
         
 
